@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Fullscreen background image -->
+    <ImageView
+        android:id="@+id/imgInstructions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo" />
+
+    <!-- Semi-transparent overlay for text content -->
+    <LinearLayout
+        android:id="@+id/instructionsOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#CCFFFFFF"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+    <TextView
+        android:id="@+id/instructionsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the Fitlife App!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="• Profile: Set your name and fitness goal.\n• Exercises: Browse strength &amp; cardio workouts.\n• Foods: Learn about healthy food choices and their benefits."
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="."
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:textColor="#555555"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>
+
+    </RelativeLayout>
